@@ -1,0 +1,78 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1a1a2e; /* Dark blue background */
+    color: #ffffff; /* White text color */
+}
+
+#generator-container {
+    padding: 40px;
+    background-color: #16213e; /* Darker blue background */
+    border: 2px solid #0f3460; /* Navy blue border */
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    transition: transform 0.3s ease;
+}
+
+#generator-container:hover {
+    transform: translateY(-10px); /* Lift on hover */
+}
+
+h2 {
+    color: #e94560; /* Bright pink color */
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #e94560; /* Bright pink text */
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #0f3460; /* Navy blue border */
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #1a1a2e; /* Match background color */
+    color: #ffffff; /* White text */
+}
+
+#generate-button {
+    padding: 14px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #e94560; /* Bright pink button */
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#generate-button:hover {
+    background-color: #d7385e; /* Slightly darker pink on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+#result {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#random-number {
+    font-weight: bold;
+    color: #ffd700; /* Gold color */
+}

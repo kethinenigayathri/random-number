@@ -1,0 +1,18 @@
+const generateButton = document.getElementById('generate-button');
+const minValueInput = document.getElementById('min-value');
+const maxValueInput = document.getElementById('max-value');
+const resultSpan = document.getElementById('random-number');
+
+generateButton.addEventListener('click', function() {
+    const minValue = parseInt(minValueInput.value);
+    const maxValue = parseInt(maxValueInput.value);
+
+    if (isNaN(minValue) || isNaN(maxValue) || minValue > maxValue) {
+        resultSpan.textContent = 'Invalid input';
+        resultSpan.style.color = '#ff0000'; // Red color for error
+    } else {
+        const randomValue = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
+        resultSpan.textContent = randomValue;
+        resultSpan.style.color = '#ffd700'; // Reset color for valid result (Gold)
+    }
+});
